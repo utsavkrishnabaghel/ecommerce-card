@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="ecom-card">
+        <div class="container-ebox">
+            <div class="box">
+                <h2 class="product-name">Speakers</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <div class="circle"></div>
+                <img src="./assets/BT-5514-Red.png" alt="" class="product">
+            </div>
+            <!-- 2nd card -->
+            <div class="box">
+                <h2 class="product-name">Headphones</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <div class="circle"></div>
+                <img src="./assets/1.png" alt="" class="product">
+            </div>
+            <!-- 3rd card -->
+            <div class="box">
+                <h2 class="product-name">Chargers</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <div class="circle"></div>
+                <img src="./assets/800x800(1).png" alt="" class="product">
+            </div>
+            <!-- 4th card -->
+            <div class="box">
+                <h2 class="product-name">Mic</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <div class="circle"></div>
+                <img src="./assets/Blue(1).png" alt="" class="product">
+            </div>
+            <!-- 5th card -->
+            <div class="box">
+                <h2 class="product-name">Wireless Neckbands</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <div class="circle"></div>
+                <img src="./assets/Green.png" alt="" class="product">
+            </div>
+            <!-- 6th card -->
+            <div class="box">
+                <h2 class="product-name">Earbuds</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <div class="circle"></div>
+                <img src="./assets/BT-285.png" alt="" class="product">
+            </div>
+            <!-- 7th card -->
+            <div class="box">
+                <h2 class="product-name">Smart Watches</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <div class="circle"></div>
+                <img src="./assets/SW-31-Blue.png" alt="" class="product">
+            </div>
+            <!-- 8th card -->
+            <div class="box">
+                <h2 class="product-name">Extension Board</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <div class="circle"></div>
+                <img src="./ext-206-1.webp" alt="" class="product">
+            </div>
+            <!-- 9th card -->
+            <div class="box">
+                <h2 class="product-name">Power Banks</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <div class="circle"></div>
+                <img src="./assets/pbx-90.png" alt="" class="product">
+            </div>
+            <!-- 10th card -->
+            <div class="box">
+                <h2 class="product-name">Keyboards and Mouse</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <div class="circle"></div>
+                <img src="./assets/KW-1510.png" alt="" class="product">
+            </div>
+            <!-- 11th card -->
+            <div class="box">
+                <h2 class="product-name">Selfie Stick</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <div class="circle"></div>
+                <img src="./assets/SF-140-800x800px.png" alt="" class="product">
+            </div>
+            <!-- 12th card -->
+            <div class="box">
+                <h2 class="product-name">Pendrives</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <div class="circle"></div>
+                <img src="./assets/PD-128gb.png" alt="" class="product">
+            </div>
+            <!--13th card -->
+            <div class="box">
+                <h2 class="product-name">Tempered Glass</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <div class="circle"></div>
+                <img src="./assets/redminote9pro_1024x1024@2x.webp" alt="" class="product">
+            </div>
+            <!--14th card -->
+            <div class="box">
+                <h2 class="product-name">Data Cables</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <div class="circle"></div>
+                <img src="./assets/WR-621-Micro-V8.png" alt="" class="product">
+            </div>
+        </div>
+    </section>
+    <style>
+        #ecom-card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #131313;
+        }
+        
+        .container-ebox {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 1600px;
+            transform-style: preserve-3d;
+        }
+        
+        .container-ebox .box {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            margin: 40px;
+            background: #232323;
+            border-radius: 20px;
+            transform-style: preserve-3d;
+        }
+        
+        .container-ebox .box::before {
+            content: 'UBON';
+            position: absolute;
+            color: #fff;
+            opacity: 0;
+            top: 20px;
+            left: 20px;
+            font-size: 6em;
+            font-weight: 900;
+            font-style: italic;
+            transition: 0.5s;
+        }
+        
+        .container-ebox .box::after {
+            content: 'UBON';
+            position: absolute;
+            color: #fff;
+            opacity: 0;
+            bottom: 20px;
+            right: 20px;
+            font-size: 5em;
+            font-weight: 900;
+            font-style: italic;
+            transition: 0.5s;
+        }
+        
+        .container-ebox .box::before,
+        .container-ebox .box::after {
+            opacity: 0.04;
+        }
+        
+        .container-ebox .box .product-name {
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+            color: #fff;
+            width: 100%;
+            transform: translate3d(0, 0, 0.75px);
+            transition: 0.5s;
+            opacity: 0;
+            z-index: 10;
+            transform-style: preserve-3d;
+        }
+        
+        .container-ebox .box:hover .product-name {
+            top: 40px;
+            opacity: 1;
+        }
+        
+        .container-ebox .box .buy {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform-style: preserve-3d;
+            transform: translate3d(-50%, 0, 75px);
+            color: #fff;
+            background: #333;
+            padding: 10px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: 0.5s;
+            opacity: 0;
+            z-index: 10;
+        }
+        
+        .container-ebox .box:hover .buy {
+            bottom: 30px;
+            opacity: 1;
+        }
+        
+        .container-ebox .box .circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            transition: 0.5s;
+            background: #fff;
+            transform-style: preserve-3d;
+            z-index: 10;
+            opacity: 1;
+            transform: translate3d(-50%, -50%, 0px);
+        }
+        
+        .container-ebox .box .product {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            max-width: 250px;
+            transition: 0.5s;
+            transform-style: preserve-3d;
+            z-index: 11;
+            transform: translate3d(-50%, -50%, 0px) rotate(-15deg);
+        }
+        
+        .container-ebox .box .circle {
+            background: #ffe225;
+        }
+        
+        .container-ebox .box:hover .product {
+            transform: translate3d(-50%, -50%, 100px);
+        }
+        
+        .container-ebox .box:hover:nth-child(1) .circle,
+        .container-ebox .box:hover:nth-child(1) .buy {
+            background: #E74C3C;
+        }
+        
+        .container-ebox .box:hover:nth-child(2) .circle,
+        .container-ebox .box:hover:nth-child(2) .buy {
+            background: #CB2641;
+        }
+        
+        .container-ebox .box:hover:nth-child(3) .circle,
+        .container-ebox .box:hover:nth-child(3) .buy {
+            background: #DA3923;
+        }
+        
+        .container-ebox .box:hover:nth-child(4) .circle,
+        .container-ebox .box:hover:nth-child(4) .buy {
+            background: #25B1D4;
+        }
+        
+        .container-ebox .box:hover:nth-child(5) .circle,
+        .container-ebox .box:hover:nth-child(5) .buy {
+            background: #1E8449;
+        }
+        
+        .container-ebox .box:hover:nth-child(6) .circle,
+        .container-ebox .box:hover:nth-child(6) .buy {
+            background: linear-gradient(90deg, rgba(121, 223, 9, 1) 0%, rgba(255, 240, 9, 1) 100%);
+        }
+        
+        .container-ebox .box:hover:nth-child(7) .circle,
+        .container-ebox .box:hover:nth-child(7) .buy {
+            background: #0EA8C3;
+        }
+        
+        .container-ebox .box:hover:nth-child(8) .circle,
+        .container-ebox .box:hover:nth-child(8) .buy {
+            background: #E93728;
+        }
+        
+        .container-ebox .box:hover:nth-child(9) .circle,
+        .container-ebox .box:hover:nth-child(9) .buy {
+            background: #6495ED;
+        }
+        
+        .container-ebox .box:hover:nth-child(10) .circle,
+        .container-ebox .box:hover:nth-child(10) .buy {
+            background: #F4D03F;
+        }
+        
+        .container-ebox .box:hover:nth-child(11) .circle,
+        .container-ebox .box:hover:nth-child(11) .buy {
+            background: #9401F3;
+        }
+        
+        .container-ebox .box:hover:nth-child(12) .circle,
+        .container-ebox .box:hover:nth-child(12) .buy {
+            background: #7DCEA0;
+        }
+        
+        .container-ebox .box:hover:nth-child(13) .circle,
+        .container-ebox .box:hover:nth-child(13) .buy {
+            background: #6495ED;
+        }
+        
+        .container-ebox .box:hover:nth-child(14) .circle,
+        .container-ebox .box:hover:nth-child(14) .buy {
+            background: #EC62B5;
+        }
+    </style>
+    <script src="./vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".box"), {
+            max: 25,
+            speed: 400
+        });
+
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".your-element"));
+    </script>
+</body>
+
+</html>
